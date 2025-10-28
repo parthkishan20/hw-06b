@@ -1,0 +1,30 @@
+| Test ID | Input | Expected Results | Actual Result | Pass or Fail |
+|---|---|---|---|---|
+| TC01 | (0, 1, 1) | InvalidInput | InvalidInput | Pass |
+| TC02 | (-1, 2, 2) | InvalidInput | InvalidInput | Pass |
+| TC03 | (2, -1, 2) | InvalidInput | InvalidInput | Pass |
+| TC04 | (2, 2, -1) | InvalidInput | InvalidInput | Pass |
+| TC05 | (201, 10, 10) | InvalidInput | InvalidInput | Pass |
+| TC06 | (10, 201, 10) | InvalidInput | InvalidInput | Pass |
+| TC07 | (10, 10, 201) | InvalidInput | InvalidInput | Pass |
+| TC08 | (3.5, 4, 5) | InvalidInput | InvalidInput | Pass |
+| TC09 | ('3', 4, 5) | InvalidInput | InvalidInput | Pass |
+| TC10 | (1, 1, 3) | NotATriangle | NotATriangle | Pass |
+| TC11 | (1, 3, 1) | NotATriangle | NotATriangle | Pass |
+| TC12 | (3, 1, 1) | NotATriangle | NotATriangle | Pass |
+| TC13 | (1, 2, 3) | NotATriangle | NotATriangle | Pass |
+| TC14 | (2, 3, 1) | NotATriangle | NotATriangle | Pass |
+| TC15 | (3, 1, 2) | NotATriangle | NotATriangle | Pass |
+| TC16 | (1, 1, 1) | Equilateral | Equilateral | Pass |
+| TC17 | (200, 200, 200) | Equilateral | Equilateral | Pass |
+| TC18 | (2, 2, 3) | Isosceles | Isosceles | Pass |
+| TC19 | (2, 3, 2) | Isosceles | Isosceles | Pass |
+| TC20 | (3, 2, 2) | Isosceles | Isosceles | Pass |
+| TC21 | (4, 6, 9) | Scalene | Scalene | Pass |
+| TC22 | (5, 6, 7) | Scalene | Scalene | Pass |
+| TC23 | (3, 4, 5) | Right | Right | Pass |
+| TC24 | (5, 4, 3) | Right | Right | Pass |
+| TC25 | (4, 5, 3) | Right | Right | Pass |
+| TC26 | (5, 12, 13) | Right | Right | Pass |
+| TC27 | (13, 12, 5) | Right | Right | Pass |
+| TC28 | (12, 13, 5) | Right | Right | Pass |
