@@ -1,0 +1,92 @@
+FE..FFFFFF
+======================================================================
+ERROR: test_invalid_non_integer (TestTriangle.TestTrianglesEnhanced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/parthkumarpatel/Downloads/SSW567/HW07/hw-06b/TestTriangle.py", line 27, in test_invalid_non_integer
+    self.assertEqual(classifyTriangle('3', 4, 5), 'InvalidInput')
+  File "/Users/parthkumarpatel/Downloads/SSW567/HW07/hw-06b/Triangle.py", line 31, in classifyTriangle
+    if a > 200 or b > 200 or c > 200:
+TypeError: '>' not supported between instances of 'str' and 'int'
+
+======================================================================
+FAIL: test_equilateral (TestTriangle.TestTrianglesEnhanced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/parthkumarpatel/Downloads/SSW567/HW07/hw-06b/TestTriangle.py", line 41, in test_equilateral
+    self.assertEqual(classifyTriangle(1, 1, 1), 'Equilateral')
+AssertionError: 'InvalidInput' != 'Equilateral'
+- InvalidInput
++ Equilateral
+
+
+======================================================================
+FAIL: test_isosceles (TestTriangle.TestTrianglesEnhanced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/parthkumarpatel/Downloads/SSW567/HW07/hw-06b/TestTriangle.py", line 46, in test_isosceles
+    self.assertEqual(classifyTriangle(2, 2, 3), 'Isosceles')
+AssertionError: 'InvalidInput' != 'Isosceles'
+- InvalidInput
++ Isosceles
+
+
+======================================================================
+FAIL: test_not_a_triangle (TestTriangle.TestTrianglesEnhanced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/parthkumarpatel/Downloads/SSW567/HW07/hw-06b/TestTriangle.py", line 31, in test_not_a_triangle
+    self.assertEqual(classifyTriangle(1, 1, 3), 'NotATriangle')
+AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+
+
+======================================================================
+FAIL: test_right_3_4_5 (TestTriangle.TestTrianglesEnhanced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/parthkumarpatel/Downloads/SSW567/HW07/hw-06b/TestTriangle.py", line 57, in test_right_3_4_5
+    self.assertEqual(classifyTriangle(3, 4, 5), 'Right')
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+
+
+======================================================================
+FAIL: test_right_5_12_13 (TestTriangle.TestTrianglesEnhanced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/parthkumarpatel/Downloads/SSW567/HW07/hw-06b/TestTriangle.py", line 62, in test_right_5_12_13
+    self.assertEqual(classifyTriangle(5, 12, 13), 'Right')
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+
+
+======================================================================
+FAIL: test_right_isosceles_legs (TestTriangle.TestTrianglesEnhanced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/parthkumarpatel/Downloads/SSW567/HW07/hw-06b/TestTriangle.py", line 69, in test_right_isosceles_legs
+    self.assertEqual(classifyTriangle(1, 1, 2), 'NotATriangle')
+AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+
+
+======================================================================
+FAIL: test_scalene (TestTriangle.TestTrianglesEnhanced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/parthkumarpatel/Downloads/SSW567/HW07/hw-06b/TestTriangle.py", line 52, in test_scalene
+    self.assertEqual(classifyTriangle(4, 6, 9), 'Scalene')
+AssertionError: 'InvalidInput' != 'Scalene'
+- InvalidInput
++ Scalene
+
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.002s
+
+FAILED (failures=7, errors=1)

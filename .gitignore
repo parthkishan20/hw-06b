@@ -1,0 +1,40 @@
+# ---- Python general ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.log
+*.tmp
+*.swp
+
+# ---- Virtual environments ----
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+
+# ---- VS Code ----
+.vscode/
+*.code-workspace
+
+# ---- macOS / Windows system files ----
+.DS_Store
+Thumbs.db
+
+# ---- Unit-test / coverage outputs ----
+.coverage
+htmlcov/
+.pytest_cache/
+*.egg-info/
+
+# ---- Jupyter / notebook checkpoints (if any) ----
+.ipynb_checkpoints/
+
+# ---- Other binary or temp files ----
+*.zip
+*.tar
+*.gz
+*.bak
